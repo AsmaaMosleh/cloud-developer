@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf www/ || true",
     "build": "npm run clean && tsc && cp package.json www\\package.json && mkdir www\\tmp\\ && cd www && zip -r Archive.zip . && cd ..",
@@ -32,5 +32,8 @@
     "jimp": "^0.16.1",
     "rimraf": "^3.0.2",
     "lodash": "^4.17.15"
+  },
+  "engines": {
+    "node": "16.17.0"
   }
 }
